@@ -21,12 +21,12 @@
   <!--Definition du container-->
   <div class="container-fluid">
 
-    <header class="row bg-warning fixed-top">
+    <header class="row bg-light sticky-top shadow">
       <!--Navbar-->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="images/quedusable.png" alt="logo">
+            <img class="rounded" src="images/quedusable.png" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,46 +34,44 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#whoAreWe">Qui Sommes Nous</a>
+              <a class="nav-link" href="#whoAreWe">Qui Sommes Nous</a>
               <a class="nav-link" href="#benefits">Les bienfaits</a>
               <a class="nav-link" href="#seeFurther">Voyons plus loin!</a>
-              <a class="nav-link" href="#rassenblement">Rassemblement</a>
+              <a class="nav-link" href="#rassemblement" target="_blank">Rassemblement</a>
             </div>
           </div>
         </div>
-       <img src="images/plage.jpg" class="img-fluid rounded d-none d-lg-block" alt="Image d'une plage">
+        <img src="images/plage.jpg" class="img-fluid rounded d-none d-lg-block" alt="Image d'une plage">
       </nav>
     </header>
 
-    <main class="row bg-primary" style="--bs-bg-opacity: 0.7">
-      <article class="row align-items-center text-center">
+    <main class="row">
+      <article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.5">
         <h2 class="p-5" id="whoAreWe">Qui sommes nous ?</h2>
-        <div class="col row-cols-md">
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col">
+            <p class="p-2 mx-5 text-break">Bonjour, si vous êtes passés sur ce site, ce n'est peut être pas anodin !
+              Vous vous souciez de vos plages et de l'environnement ? Nous aussi !
+              QueDuSable est une association regroupant des gens du littoral et autres qui se préoccupent de la bonne
+              santé physique et visuelle de nos plages !
+              Le but de l'association est d'organiser des journées de rassemblement à travers
+              l'année
+              pour se charger
+              de purifier les plages françaises.
+              On décide d'une date, d'une plage, on s'arme de nos outils de collectes et on part à l'abordage.
 
-          <p class="p-2 text-break" >Bonjour, si vous êtes passés sur ce site, ce n'est peut être pas anodin !
-            Vous vous souciez de vos plages et de l'environnement ? Nous aussi !
-            QueDuSable est une association regroupant des gens du littoral et autres qui se préoccupent de la bonne
-            santé physique et visuelle de nos plages !</p>
-          <p class="p-2 text-break"> Le but de l'association est d'organiser des journées de rassemblement à travers
-            l'année
-            pour se charger
-            de purifier les plages françaises.
-            On décide d'une date, d'une plage, on s'arme de nos outils de collectes et on part à l'abordage.
-          </p>
-          <p class="p-2 text-break"> Etant une association bénévole, on se charge simplement de partager les
-            informations et
-            d'organiser
-            les rassemblement.
-            Les outils nécessaires pour ramasser les différents déchets seront mis à votre disposition.
-          </p>
-
-        </div>
-        <div class="col d-none d-lg-block">
-          <p class="p-5">Bouffon</p>
-        </div>
+              Etant une association bénévole, on se charge simplement de partager les
+              informations et
+              d'organiser
+              les rassemblement.
+              Les outils nécessaires pour ramasser les différents déchets seront mis à votre disposition.
+            </p>
+          </div>
+          <div class="col countdown"></div>
+        </aside>
       </article>
 
-      <article class="align-items-center text-center">
+      <article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.6">
 
         <h2 class="p-5" id="benefits">Les bienfaits d'une plage propre</h2>
 
@@ -92,8 +90,8 @@
               alt="Photo de la plage saint georges didonne">
           </div>
         </aside>
+
         <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          
           <div class="col order-lg-2">
             <li class="p-4"><b>Protéger l'environnement et l'écosystéme aquatique</b></li>
             <p class="p-2 text-break">Tous les déchets trainant sur les plages finiront éventuellement dans l'eau,
@@ -107,8 +105,8 @@
           <div class="col order-lg-1">
             <img src="images/pollution-mer2.jpg" class="img-fluid rounded" alt="Photo de cannettes en fond marins">
           </div>
-
         </aside>
+
         <aside class="row row-cols-1 row-cols-lg-2 p-4">
           <div class="col">
             <li class="p-4"><b>Ne pas alimenter le continent plastique</b> </li>
@@ -122,6 +120,7 @@
             <img src="images/7emecontinent.png" class="img-fluid rounded" alt="Image du 7ème continent">
           </div>
         </aside>
+
         <aside class="row row-cols-1 row-cols-lg-2 p-4">
           <div class="col order-lg-2">
             <li class="p-4"><b>Touristique</b></li>
@@ -132,26 +131,129 @@
             <img src="images/Pavillon_Bleu_d'Europe.png" class="img-fluid rounded"
               alt="Logo du label environnemental et touristique international">
           </div>
-          
-          
         </aside>
       </article>
 
-      <article class="row align-items-center text-center">
-        <div class="col">
-          <h2 class="p-5" id="seeFurther">Voyons plus loin !</h2>
-          <ul>
-            <li>Asso déchet</li>
-            <li>Asso déchet</li>
-            <li>Asso déchet</li>
-          </ul>
-        </div>
-        <div class="col d-none d-lg-block"></div>
+      <article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.7">
+        <h2 class="p-5" id="seeFurther">Voyons plus loin !</h2>
+        <p class="p-2 text-break">Si vous voulez en savoir plus et participer autrement au respect
+          de la planète bleue et de son environnement, vous pouvez surfer sur les sites suivants et en apprendre
+          d'avantage sur les différentes actions écologiques menées !</p>
 
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col">
+
+            <li class="p-4">
+              <a href="https://aremacs.com/" style="color:lightgrey" target="_blank">Aremacs</a>
+            </li>
+            <p class="p-2 text-break"> Association pour le Respect de l’Environnement lors des Manifestations
+              Culturelles et Sportives
+
+              Accompagnement à la réduction, la gestion et la valorisation des déchets en événementiel,
+              sensibilisation des publics et écoresponsabilité événementielle
+            </p>
+            <p class="fst-italic">Source : carenews</p>
+          </div>
+          <div class="col"> <img class="col-3 rounded m-2" src="images/aremacs.png" alt="Logo Aremacs">
+          </div>
+        </aside>
+
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col order-lg-2">
+            <li class="p-4">
+              <a href="https://www.earthwake.fr/" style="color:lightgrey" target="_blank">Earthwake</a>
+            </li>
+            <p class="p-2 text-break">Et si le plastique pouvait être revalorisé en carburant ?
+              C’est le pari de cette association niçoise,
+              grâce à une machine que les cofondateurs ont baptisé Chrysalis.
+              Elle recycle les bouchons en plastique et les bouteilles de lait en carburant
+              qui permet aux camions poubelles de la communauté de communes Alpes-Azur de se déplacer.</p>
+            <p class="fst-italic">Source : carenews</p>
+          </div>
+          <div class="col order-lg-1"> <img class="col-3 rounded m-2" src="images/earthwake.png" alt="Logo Earthwake">
+          </div>
+        </aside>
+
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col">
+            <li class="p-4">
+              <a href="https://www.plastic-pickup.fr/" style="color:lightgrey" target="_blank">Plastic Pickup</a>
+            </li>
+            <p class="p-2 text-break">« Notre devise, c’est trois déchets par jour,
+              et c’est plus facile que les légumes ! », peut-on lire sur leur site Internet.
+              Depuis 2013, l’association nantaise organise des collectes citoyennes de déchets.
+              Afin d’embarquer le plus grand nombre de citoyens dans cette démarches,
+              Plastic Pickup propose également sur son site
+              une carte interactive regroupant divers groupes et initiatives allant dans ce sens,
+              en France et même en Europe !</p>
+            <p class="fst-italic">Source : carenews</p>
+          </div>
+          <div class="col"> <img class="col-3 rounded m-2" src="images/plastic-pickup.jpg" alt="Logo Plastic Pickup">
+          </div>
+        </aside>
+
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col order-lg-2">
+            <li class="p-4">
+              <a href="https://www.latricyclerie.fr/" style="color:lightgrey" target="_blank">La Tricyclerie</a>
+            </li>
+            <p class="p-2 text-break">Un tiers des déchets de nos poubelles pourraient être compostés.
+              Partant de ce constat, la Tricyclerie propose aux commerçants
+              et entreprises un service de collecte de leurs déchets organiques… en vélo !
+              Six tonnes sont ainsi collectées puis compostées chaque mois.
+              Le compost produit par l’association est ensuite commercialisé chez des commerçants locaux.
+            </p>
+            <p class="fst-italic">Source : carenews</p>
+          </div>
+          <div class="col order-lg-1"> <img class="col-3 rounded m-2" src="images/latricyclerie.jpg"
+              alt="Logo La Tricyclerie">
+          </div>
+        </aside>
+
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col">
+            <li class="p-4">
+              <a href="https://surfrider.eu/" style="color:lightgrey" target="_blank">SurfRider </a>
+            </li>
+            <p class="p-2 text-break">Surfriders Foundation Europe est un acteur majeur de la protection de l’océan
+              et des littoraux. Depuis plus de 30 ans,
+              l’association est en effet engagée dans la lutte contre les déchets aquatiques,
+              l’étude de la qualité de l’eau et la sensibilisation du grand public aux questions de l’aménagement
+              du littoral et les conséquences du changement climatique.
+              Surfriders Foundation Europe compte aujourd’hui près de 2 000 bénévoles
+              et a déployé son réseau dans onze pays européens.</p>
+            <p class="fst-italic">Source : carenews</p>
+          </div>
+          <div class="col"> <img class="col-3 rounded m-2" src="images/surfrider-foundation.jpg" alt="Logo SurfRider">
+          </div>
+        </aside>
+
+        <aside class="row row-cols-1 row-cols-lg-2 p-4">
+          <div class="col order-lg-2">
+            <li class="p-4">
+              <a href="https://www.zerowastefrance.org/" style="color:lightgrey" target="_blank">
+                Zero Waste France</a>
+            </li>
+            <p class="p-2 text-break">Créée en 1997, Zero Waste France (ex-Cniid) est une association
+              qui promeut le mode de vie zéro déchet et zéro gaspillage. Achats en vrac,
+              retour à la consigne ou encore compostage des déchets organiques…
+              autant de pratiques qui permettent finalement de traiter le problème à la source.
+              Zero Waste France a également inauguré en 2017 la Maison du Zéro Déchet,
+              un lieu qui a vocation à faire découvrir ce mode de vie.
+              L’association a récemment mis à disposition
+              des utilisateurs une carte interactive répertoriant toutes les initiatives zéro déchet
+              et zéro gaspillage en France.</p>
+            <p class="fst-italic">Source : carenews</p>
+          </div>
+          <div class="col order-lg-1"> <img class="col-3 rounded m-2" src="images/zerowastefrance.png"
+              alt="Logo Zero Waste France">
+          </div>
+        </aside>
       </article>
-      <article class="row align-items-center text-center">
+      
+      <article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.8">
         <div class="col">
-          <h2 class="p-5" id="rassenblement">Rassemblement</h2>
+          <h2 class="p-5" id="rassemblement">Rassemblement</h2>
           <p>Venez découvrir nos prochains rassemblement et inscrivez vous pour participer !</p>
         </div>
         <div class="col d-none d-lg-block"></div>
@@ -159,7 +261,7 @@
     </main>
   </div>
 
-  <footer class="py-3 footer bg-warning">
+  <footer class="py-3 footer bg-light">
     <p class="p-2">Contacts <br>
 
       Contacts
