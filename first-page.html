@@ -13,9 +13,10 @@
   <!--Bootstrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
   <title>QueDuSable</title>
-  <meta name="description" content="Entraînement de création de website (Html,Bootstrap,Css)
-   ayant pour sujet une association">
+  <meta name="description" content="Présentation de l'association QueDuSable">
 </head>
 
 <body>
@@ -24,126 +25,138 @@
   <div class="container-fluid">
 
     <header class="row bg-light sticky-top shadow">
-      <!--Navbar-->
+      <!--Bouton back on top-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+            <!--Navbar-->
       <nav class="navbar navbar-expand-lg navbar-light">
         <!--<div class="container-fluid">-->
-          <a class="navbar-brand" href="#">
-            <img class="rounded" src="images/quedusable.png" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#whoAreWe">Qui Sommes Nous</a>
-              <a class="nav-link" href="#benefits">Les bienfaits</a>
-              <a class="nav-link" href="#seeFurther">Voyons plus loin!</a>
-              <a class="nav-link" href="second-page.html" target="_blank">Rassemblement</a>
-            </div>
+        <a class="navbar-brand" href="#">
+          <img class="rounded" src="images/quedusable.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#whoAreWe">Qui Sommes Nous</a>
+            <a class="nav-link" href="#benefits">Les bienfaits</a>
+            <a class="nav-link" href="#seeFurther">Voyons plus loin!</a>
+            <a class="nav-link" href="second-page.html" target="_blank">Rassemblement</a>
           </div>
-        <!--</div>-->
+        </div>
         <img src="images/plage.jpg" class="img-fluid rounded d-none d-lg-block" alt="Image d'une plage">
       </nav>
     </header>
 
-    <main class="row bg-primary" style="--bs-bg-opacity: 0.5">
-      <article class="text-center bg-primary shadow" style="--bs-bg-opacity: 0.5">
-        <div class="row row-cols-1 row-cols-lg-2 p-4 text-justify">
-          <h2 class="p-5 d-inline-block" id="whoAreWe">Qui sommes nous ?</h2>
-            <p class="p-2 mx-5 text-justify">Bonjour, si vous êtes passés sur ce site, ce n'est peut être pas anodin !
-              Vous vous souciez de vos plages et de l'environnement ? Nous aussi !
-              QueDuSable est une association regroupant des gens du littoral et autres qui se préoccupent de la bonne
-              santé physique et visuelle de nos plages !
-              Le but de l'association est d'organiser des journées de rassemblement à travers
-              l'année
-              pour se charger
-              de purifier les plages françaises.
-              On décide d'une date, d'une plage, on s'arme de nos outils de collectes et on part à l'abordage.
-
-              Etant une association bénévole, on se charge simplement de partager les
-              informations et
-              d'organiser
-              les rassemblement.
-              Les outils nécessaires pour ramasser les différents déchets seront mis à votre disposition.
-            </p>
-          </div>
+    <main class="row shadow background">
+      <article class="row m-auto p-4 text-center text-break">
+        <div class="row-cols-lg-2 rounded shadow background-form">
+          <h1 class="p-4 d-inline-block" id="whoAreWe">Qui sommes nous ?</h1>
+          <p class="p-2 d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum sed
+            justo in euismod. Fusce mattis accumsan libero, at mattis felis eleifend ornare. Donec accumsan vestibulum
+            diam, a elementum massa congue vitae. Quisque sed felis at libero cursus volutpat in eu orci. Praesent at
+            varius neque. Vivamus semper lacinia erat, in vulputate leo tincidunt at. Nullam accumsan lacinia molestie.
+            Morbi tempus sem pretium nulla eleifend vestibulum. Cras lectus lectus, finibus at aliquam sed, pharetra vel
+            turpis. Aliquam at finibus nibh, quis dapibus risus. Praesent interdum eleifend ex, vel posuere dui
+            convallis vitae. Nam posuere quam est, sit amet auctor metus elementum et. Nunc eleifend facilisis
+            tristique.
+          </p>
+        </div>
       </article>
 
-      <article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.55">
-
+      <article class="row m-auto text-center text-break">
         <h2 class="p-5" id="benefits">Les bienfaits d'une plage propre</h2>
-
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col">
-            <li class="p-4"><b>Les plaisirs</b></li>
-            <p class="p-2">Pouvoir profiter de la plage que ça soit en se promenant, en faisant bronzette
-              ou simplement
-              pour admirer le paysage sans que ces plaisirs soient gachés par des déchets se trimbalant sur le sable
-            </p>
-            <p class="p-2">Pouvoir s'asseoir ou s'allonger sans avoir à regarder s'il y a un mégot ou un bout
-              de verre.</p>
+        <aside class="col-lg p-4">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <h4 class="p-4"><b>Les plaisirs</b></h4>
+            <p class="p-2 d-inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum
+              sed
+              justo in euismod. Fusce mattis accumsan libero, at mattis felis eleifend ornare. Donec accumsan vestibulum
+              diam, a elementum massa congue vitae. Quisque sed felis at libero cursus volutpat in eu orci. Praesent at
+              varius neque. Vivamus semper lacinia erat, in vulputate leo tincidunt at. Nullam accumsan lacinia
+              molestie.</p>
           </div>
-          <div class="col"> <img src="images/Phare-plage-stgeorges-didonne.jpg" class="img-fluid rounded shadow"
+        </aside>
+
+        <aside class="col-lg p-4">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img src="images/Phare-plage-stgeorges-didonne.jpg" class="img-fluid rounded shadow"
               alt="Photo de la plage saint georges didonne">
           </div>
         </aside>
+      </article>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col order-lg-2">
-            <li class="p-4"><b>Protéger l'environnement et l'écosystéme aquatique</b></li>
-            <p class="p-2">Tous les déchets trainant sur les plages finiront éventuellement dans l'eau,
-              sur une dune.</p>
-            <p class="p-2"> En participant à la propreté des plages, on participe également à l'entretien de
-              l'environnement
-              et de l'écosystéme aquatique. On protège tous ce qui est coraux, algues, fonds marins mais également
-              les animaux aquatique qui peuvent ingérer un déchet ou bien se retrouver pièger d'un filet
-              ou d'un sac plastique par exemple</p>
-          </div>
-          <div class="col order-lg-1">
-            <img src="images/pollution-mer2.jpg" class="img-fluid rounded shadow" alt="Photo de cannettes en fond marins">
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4 order-lg-2">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <h4 class="p-4"><b>Protéger l'environnement et l'écosystéme aquatique</b></h4>
+            <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum sed
+              justo in euismod. Fusce mattis accumsan libero, at mattis felis eleifend ornare. Donec accumsan vestibulum
+              diam, a elementum massa congue vitae. Quisque sed felis at libero cursus volutpat in eu orci. Praesent at
+              varius neque. Vivamus semper lacinia erat, in vulputate leo tincidunt at. Nullam accumsan lacinia
+              molestie.</p>
           </div>
         </aside>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col">
-            <li class="p-4"><b>Ne pas alimenter le continent plastique</b> </li>
-            <p class="p-2"> Appeler également vortex, septième continent, situer dans le pacifique nord. Il
-              est constitué de <br>
-              plastiques et autres déchet qui s'accumulent en bancs.
-              En participant à la collecte sur les plages, nous contribuons à ne pas renforcer ces zones qui mettront
-              des centaines d'années avant de se désagréger.</p>
+        <aside class="col-lg p-4 order-lg-1">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img src="images/pollution-mer2.jpg" class="img-fluid rounded shadow h-100"
+              alt="Photo de cannettes en fond marins">
           </div>
-          <div class="col">
+        </aside>
+      </article>
+
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <h4 class="p-4"><b>Ne pas alimenter le continent plastique</b></h4>
+            <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum sed
+              justo in euismod. Fusce mattis accumsan libero, at mattis felis eleifend ornare. Donec accumsan vestibulum
+              diam, a elementum massa congue vitae. Quisque sed felis at libero cursus volutpat in eu orci. Praesent at
+              varius neque. Vivamus semper lacinia erat, in vulputate leo tincidunt at. Nullam accumsan lacinia
+              molestie.</p>
+          </div>
+        </aside>
+
+        <aside class="col-lg p-4">
+          <div class="shadow rounded background-form p-5 h-100">
             <img src="images/7emecontinent.png" class="img-fluid rounded shadow" alt="Image du 7ème continent">
           </div>
         </aside>
+      </article>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col order-lg-2">
-            <li class="p-4"><b>Touristique</b></li>
-            <p class="p-2"> En gardant les littoraux propres, nous assurons une bonne image et gardons une
-              attraction des touristes pour nos plages, ce qui est essentiel pour les villes balnéaires.</p>
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4 order-lg-2">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <h4 class="p-4"><b>Touristique</b></h4>
+            <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum sed
+              justo in euismod. Fusce mattis accumsan libero, at mattis felis eleifend ornare. Donec accumsan vestibulum
+              diam, a elementum massa congue vitae. Quisque sed felis at libero cursus volutpat in eu orci. Praesent at
+              varius neque. Vivamus semper lacinia erat, in vulputate leo tincidunt at. Nullam accumsan lacinia
+              molestie.</p>
           </div>
-          <div class="col order-lg-1">
-            <img src="images/Pavillon_Bleu_d'Europe.png" class="pb-4 img-fluid rounded"
+        </aside>
+
+        <aside class="col-lg p-4 order-lg-1">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img src="images/Pavillon_Bleu_d'Europe.png" class="img-fluid rounded"
               alt="Logo du label environnemental et touristique international">
           </div>
         </aside>
       </article>
 
-      <article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.6">
+      <article class="row m-auto text-center text-break">
         <h2 class="p-5" id="seeFurther">Voyons plus loin !</h2>
         <p class="p-2">Si vous voulez en savoir plus et participer autrement au respect
-          de la planète bleue et de son environnement, <br> vous pouvez surfer sur les sites suivants et en apprendre
+          de la planète bleue et de son environnement, <br> vous pouvez surfer sur les sites suivants et en
+          apprendre
           d'avantage sur les différentes actions écologiques menées !</p>
-
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col">
-
-            <li class="p-4">
-              <a href="https://aremacs.com/" style="color:lightgrey" target="_blank">Aremacs</a>
-            </li>
+        <aside class="col-lg p-4">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <div class="p-4">
+              <a href="https://aremacs.com/" style="color:grey" target="_blank">Aremacs</a>
+            </div>
             <p class="p-2"> Association pour le Respect de l’Environnement lors des Manifestations
               Culturelles et Sportives
 
@@ -152,15 +165,21 @@
             </p>
             <p class="fst-italic">Source : carenews</p>
           </div>
-          <div class="col"> <img class="col-3 rounded m-5" src="images/aremacs.png" alt="Logo Aremacs">
-          </div>
         </aside>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col order-lg-2">
-            <li class="p-4">
-              <a href="https://www.earthwake.fr/" style="color:lightgrey" target="_blank">Earthwake</a>
-            </li>
+        <aside class="col-lg p-4">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img class="col-3 rounded m-5" src="images/aremacs.png" alt="Logo Aremacs">
+          </div>
+        </aside>
+      </article>
+
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4 order-lg-2">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <div class="p-4">
+              <a href="https://www.earthwake.fr/" style="color:grey" target="_blank">Earthwake</a>
+            </div>
             <p class="p-2 text-break">Et si le plastique pouvait être revalorisé en carburant ?
               C’est le pari de cette association niçoise,
               grâce à une machine que les cofondateurs ont baptisé Chrysalis.
@@ -168,15 +187,21 @@
               qui permet aux camions poubelles de la communauté de communes Alpes-Azur de se déplacer.</p>
             <p class="fst-italic">Source : carenews</p>
           </div>
-          <div class="col order-lg-1"> <img class="col-3 rounded m-5" src="images/earthwake.png" alt="Logo Earthwake">
-          </div>
         </aside>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col">
-            <li class="p-4">
-              <a href="https://www.plastic-pickup.fr/" style="color:lightgrey" target="_blank">Plastic Pickup</a>
-            </li>
+        <aside class="col-lg p-4 order-lg-1">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img class="col-3 rounded m-5" src="images/earthwake.png" alt="Logo Earthwake">
+          </div>
+        </aside>
+      </article>
+
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <div class="p-4">
+              <a href="https://www.plastic-pickup.fr/" style="color:grey" target="_blank">Plastic Pickup</a>
+            </div>
             <p class="p-2 text-break">« Notre devise, c’est trois déchets par jour,
               et c’est plus facile que les légumes ! », peut-on lire sur leur site Internet.
               Depuis 2013, l’association nantaise organise des collectes citoyennes de déchets.
@@ -186,15 +211,21 @@
               en France et même en Europe !</p>
             <p class="fst-italic">Source : carenews</p>
           </div>
-          <div class="col"> <img class="col-3 rounded m-5" src="images/plastic-pickup.jpg" alt="Logo Plastic Pickup">
-          </div>
         </aside>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col order-lg-2">
-            <li class="p-4">
-              <a href="https://www.latricyclerie.fr/" style="color:lightgrey" target="_blank">La Tricyclerie</a>
-            </li>
+        <aside class="col-lg p-4">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img class="col-3 rounded m-5" src="images/plastic-pickup.jpg" alt="Logo Plastic Pickup">
+          </div>
+        </aside>
+      </article>
+
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4 order-lg-2">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <div class="p-4">
+              <a href="https://www.latricyclerie.fr/" style="color:grey" target="_blank">La Tricyclerie</a>
+            </div>
             <p class="p-2 text-break">Un tiers des déchets de nos poubelles pourraient être compostés.
               Partant de ce constat, la Tricyclerie propose aux commerçants
               et entreprises un service de collecte de leurs déchets organiques… en vélo !
@@ -203,16 +234,21 @@
             </p>
             <p class="fst-italic">Source : carenews</p>
           </div>
-          <div class="col order-lg-1"> <img class="col-3 rounded m-5" src="images/latricyclerie.jpg"
-              alt="Logo La Tricyclerie">
-          </div>
         </aside>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col">
-            <li class="p-4">
-              <a href="https://surfrider.eu/" style="color:lightgrey" target="_blank">SurfRider </a>
-            </li>
+        <aside class="col-lg p-4 order-lg-1">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img class="col-3 rounded m-5" src="images/latricyclerie.jpg" alt="Logo La Tricyclerie">
+          </div>
+        </aside>
+      </article>
+
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <div class="p-4">
+              <a href="https://surfrider.eu/" style="color:grey" target="_blank">SurfRider </a>
+            </div>
             <p class="p-2 text-break">Surfriders Foundation Europe est un acteur majeur de la protection de l’océan
               et des littoraux. Depuis plus de 30 ans,
               l’association est en effet engagée dans la lutte contre les déchets aquatiques,
@@ -222,16 +258,24 @@
               et a déployé son réseau dans onze pays européens.</p>
             <p class="fst-italic">Source : carenews</p>
           </div>
-          <div class="col"> <img class="col-3 rounded m-5" src="images/surfrider-foundation.jpg" alt="Logo SurfRider">
-          </div>
         </aside>
 
-        <aside class="row row-cols-1 row-cols-lg-2 p-4">
-          <div class="col order-lg-2">
-            <li class="p-4">
-              <a href="https://www.zerowastefrance.org/" style="color:lightgrey" target="_blank">
+        <aside class="col-lg p-4">
+          <div class="shadow rounded background-form p-5 h-100">
+            <img class="col-3 rounded m-5" src="images/surfrider-foundation.jpg" alt="Logo SurfRider">
+          </div>
+        </aside>
+      </article>
+
+      <article class="row m-auto text-center text-break">
+        <aside class="col-lg p-4 order-lg-2">
+          <div class="shadow rounded bg-light p-5 h-100" style="--bs-bg-opacity: 0.5">
+            <div class="p-4">
+              <a href="https://www.zerowastefrance.org/" style="color:grey" target="_blank" class="p-4">
                 Zero Waste France</a>
-            </li>
+            </div>
+
+
             <p class="p-2 text-break">Créée en 1997, Zero Waste France (ex-Cniid) est une association
               qui promeut le mode de vie zéro déchet et zéro gaspillage. Achats en vrac,
               retour à la consigne ou encore compostage des déchets organiques…
@@ -243,30 +287,39 @@
               et zéro gaspillage en France.</p>
             <p class="fst-italic">Source : carenews</p>
           </div>
-          <div class="col order-lg-1"> <img class="col-3 rounded m-5" src="images/zerowastefrance.png"
-              alt="Logo Zero Waste France">
+        </aside>
+
+        <aside class="col-lg p-4 order-lg-1">
+          <div class="shadow rounded background-form p-5 h-100" style="--bs-bg-opacity: 0.4">
+            <img class="col-3 rounded m-5" src="images/zerowastefrance.png" alt="Logo Zero Waste France">
           </div>
         </aside>
       </article>
-      
-      <!--<article class="align-items-center text-center bg-primary shadow" style="--bs-bg-opacity: 0.8">
-        <div class="col">
-          <h2 class="p-5" id="rassemblement">Rassemblement</h2>
-          <p>Venez découvrir nos prochains rassemblement et inscrivez vous pour participer !</p>
-        </div>
-        <div class="col d-none d-lg-block"></div>
-      </article>-->
     </main>
   </div>
 
-  <footer class="py-3 footer bg-light">
-    <p class="p-2">Contacts <br>
-
-      Contacts
-    </p>
-
-
+  <footer class="container-fluid py-3 footer bg-light text-center">
+    <section class="row">
+      <div class="col-4 m-auto">
+        <img class="rounded" src="images/quedusable.png" alt="Logo">
+      </div>
+      <div class="col-4 m-auto">
+        <a href="form.html">
+          <p>Participation au rassemblement</p>
+        </a>
+      </div>
+      <div class="col-4 m-auto">
+        <div> Nos liens QueDuSable
+        </div>
+        <div> 
+          <a href="" class="p-2"><img src="icons-1.8.1/icons/twitter.svg" alt="logo twitter"></a>
+          <a href="" class="p-2"><img src="icons-1.8.1/icons/instagram.svg" alt="logo instagram"></a>
+          <a href="" class="p-2"><img src="icons-1.8.1/icons/facebook.svg" alt="logo facebook"></a>
+        </div>
+      </div>
+    </section>
   </footer>
+  <script src="fichier.js"></script>
 </body>
 
 </html>
